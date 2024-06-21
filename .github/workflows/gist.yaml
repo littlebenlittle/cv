@@ -1,4 +1,4 @@
-name: Github Pages
+name: Publish Gist
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         with:
           cmd: yq -j '.' resume.yaml
       - name: Create JSON File
-        run: echo ${{ steps.compile.outputs.result }} >resume.json
+        run: echo '${{ steps.compile.outputs.result }}' >resume.json
       - name: Update Gist
         uses: exuanbo/actions-deploy-gist@v1
         with:
