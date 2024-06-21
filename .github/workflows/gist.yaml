@@ -2,7 +2,7 @@ name: Github Pages
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [main]
 
 permissions:
   contents: read
@@ -15,18 +15,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Compile JSON
-      id: compile
-      uses: mikefarah/yq@v4
-      with:
-        cmd: yq -j '.' resume.yaml
-    - name: Create JSON File
-      run: echo ${{ steps.compile.outputs.result }} >resume.json
-    - name: Update Gist
-      uses: exuanbo/actions-deploy-gist@v1
-      with:
-        token: ${{ secrets.GIST_TOKEN }}
-        gist_id: cadd0d13339210fde3095c195a47a602
-        file_path: resume.json
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Compile JSON
+        id: compile
+        uses: mikefarah/yq@v4
+        with:
+          cmd: yq -j '.' resume.yaml
+      - name: Create JSON File
+        run: echo ${{ steps.compile.outputs.result }} >resume.json
+      - name: Update Gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: cadd0d13339210fde3095c195a47a602
+          file_path: resume.json
