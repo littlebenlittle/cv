@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: "gist/resume.json"
+  group: "build"
   cancel-in-progress: true
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: cadd0d13339210fde3095c195a47a602
-          file_path: dist/resume.json
+          file_path: artifact/resume.json
 
   release:
     needs: build
@@ -47,7 +47,9 @@ jobs:
     steps:
       - name: Get Artifact
         uses: actions/download-artifact@v4
+        with:
+          name: dist
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/*
+          files: artifact/*
