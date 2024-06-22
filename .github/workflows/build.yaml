@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
       - name: Install Dependencies
         run: cd builder && npm clean-install
       - name: Compile to HTML and PDF
