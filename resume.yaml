@@ -8,6 +8,10 @@ basics:
   email: ben.little@benlittle.dev
   url: https://benlittle.dev
   image: https://benlittle.dev/assets/profile.jpg
+  location:
+    countryCode: US
+    city: Louisville
+    region: Colorado
   profiles:
     - network: GitHub
       url: https://github.com/littlebenlittle
