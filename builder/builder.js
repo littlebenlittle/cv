@@ -26,7 +26,7 @@ import puppeteer from 'puppeteer'
 import { render } from 'resumed'
 import * as yaml from 'yaml'
 
-const resume = yaml.parse(await fs.readFile('resume.json', 'utf-8'))
+const resume = yaml.parse(await fs.readFile('resume.yaml', 'utf-8'))
 const html = await render(resume, theme)
 
 const browser = await puppeteer.launch()
