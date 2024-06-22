@@ -18,8 +18,8 @@ basics:
       username: littlebenlittle
   summary: >-
     Software Engineer, Mathematician, and Computer Scientist looking
-    to make a positive social impact by building accessible and impactful
-    software tools.
+    to make a positive social impact by building accessible and meaningful
+    tools.
 
 work:
   - name: CU Boulder
@@ -73,18 +73,18 @@ work:
 volunteer:
   - organization: Neurodiversity Community Center
     position: Web Development
-    startDate: 2024-04-01
+    startDate: 2024-04
     summary: >-
       Built WordPress website and provided technical guidance.
   - organization: Rocky Mountain Equality
     position: Volunteer
-    startDate: 2024-05-01
+    startDate: 2024-05
     summary: >-
       Assisted with events, including preparing show venues and helping youth
       with arts & crafts at pride events.
   - organization: CU Association for Students with Disabilities
     position: Community Facilitator
-    startDate: 2022-11-01
+    startDate: 2022-11
     summary: >-
       Helped organize meetings and facilitate conversation among CU students,
       faculty, and staff who identify with the experience of being disabled.
@@ -93,6 +93,7 @@ education:
   - institution: University of Colorado Boulder
     area: Computer Science
     studyType: Master of Science (Incomplete)
+    startDate: 2021-08-01
     courses:
       - Foundations of Programming Languages
       - Computer Security and Ethical Hacking
@@ -103,6 +104,7 @@ education:
   - institution: The Pennsylvania State University
     area: Mathematics
     studyType: Bachelor of Science
+    startDate: 2011-06-01
     endDate: 2015-05-01
 
 skills:

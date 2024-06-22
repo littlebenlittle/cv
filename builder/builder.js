@@ -32,7 +32,7 @@ const html = await render(resume, theme)
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
 
-await fs.mkdir('dist')
+try { await fs.mkdir('dist') } catch {}
 await page.setContent(html, { waitUntil: 'networkidle0' })
 await page.pdf({ path: 'dist/resume.pdf', format: 'a4', printBackground: true })
 await browser.close()
