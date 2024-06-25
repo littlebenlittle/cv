@@ -21,8 +21,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v4
-      - name: Install Dependencies
+      - name: Install Builder Dependencies
         run: cd builder && npm clean-install
+      - name: Install Theme Dependencies
+        run: cd theme && npm clean-install
       - name: Compile to HTML and PDF
         run: node builder/builder.js
       - name: Upload Artifact
