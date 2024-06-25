@@ -4,14 +4,15 @@ meta:
   theme: stackoverflow
 
 basics:
-  name: Ben Little (he/they)
+  name: Ben Little
+  pronouns: He/They
+  image: https://benlittle.dev/assets/profile.jpg
   email: ben.little@benlittle.dev
   url: https://benlittle.dev
-  image: https://benlittle.dev/assets/profile.jpg
   location:
-    countryCode: US
     city: Louisville
     region: Colorado
+    countryCode: US
   profiles:
     - network: GitHub
       url: https://github.com/littlebenlittle
@@ -72,25 +73,30 @@ work:
 
 volunteer:
   - organization: Neurodiversity Community Center
-    position: Web Development
+    position: Technology Consultant
     startDate: 2024-04
+    location: Lafaytte, CO
     summary: >-
-      Built WordPress website and provided technical guidance.
+      Built WordPress website and provided technical guidance during
+      organization's initial launch.
   - organization: Rocky Mountain Equality
     position: Volunteer
     startDate: 2024-05
+    location: Boulder, CO
     summary: >-
       Assisted with events, including preparing show venues and helping youth
       with arts & crafts at pride events.
   - organization: CU Association for Students with Disabilities
     position: Community Facilitator
     startDate: 2022-11
+    location: Boulder, CO
     summary: >-
       Helped organize meetings and facilitate conversation among CU students,
       faculty, and staff who identify with the experience of being disabled.
 
 education:
   - institution: University of Colorado Boulder
+    location: Boulder, CO
     area: Computer Science
     studyType: Master of Science (Incomplete)
     startDate: 2021-08-01
@@ -102,6 +108,7 @@ education:
       - Computational Complexity Theory
       - Network Analysis and Modeling
   - institution: The Pennsylvania State University
+    location: University Park, PA
     area: Mathematics
     studyType: Bachelor of Science
     startDate: 2011-06-01
@@ -111,12 +118,12 @@ skills:
   - name: Linux System Administration
     level: Advanced (8 years)
     keywords:
-      - Provisioning Systems
-      - Filesystem Management
+      - Provisioning
+      - Filesystems
       - systemd
       - Containers
       - Virtualization
-      - Firewall Management
+      - Firewalls
   - name: Programming Languages
     level: Advanced (8 years)
     keywords:
@@ -130,12 +137,14 @@ skills:
   - name: Software Development
     level: Intermediate (5 years)
     keywords:
-      - Version Control Software
-      - Object Oriented Programming
-      - Microservice Architecture
-      - Web Programming
+      - Version Control
+      - OOP
+      - Functional Programming
+      - Microservices
+      - Web Development
       - Test-Driven Development
-      - Automation and CI/CD
+      - Automation
+      - CI/CD
   - name: Formal Methods
     level: Beginner (2 years)
     keywords:

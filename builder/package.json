@@ -13,6 +13,7 @@
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-minyma": "^0.0.5",
     "jsonresume-theme-stackoverflow": "^2.0.2",
+    "jsonresume-theme-rusty": "file:../theme",
     "puppeteer": "^22.12.0",
     "resumed": "^3.0.1",
     "yaml": "^2.4.5"

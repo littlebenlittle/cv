@@ -1,0 +1,17 @@
+{
+  "name": "jsonresume-theme-rusty",
+  "version": "0.0.0",
+  "description": "Rust-y theme for json-resume 🦀",
+  "main": "index.cjs",
+  "scripts": {
+    "build": "npx puglatizer -d templates -o render.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Little <ben.little@benlittle.dev>",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "pug": "^3.0.3",
+    "sass": "^1.77.6"
+  }
+}
