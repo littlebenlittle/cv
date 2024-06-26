@@ -7,4 +7,4 @@ podman run -ti --rm \
     -v ./builder:/home/pptruser/builder \
     -v ./theme:/home/pptruser/theme:ro \
     ghcr.io/puppeteer/puppeteer \
-    node builder/builder.js
+    node builder/builder.js "$@"

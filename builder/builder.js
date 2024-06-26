@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs'
 import * as theme from 'jsonresume-theme-rusty'
+import { argv, exit } from 'process'
 import { render } from 'resumed'
 import * as yaml from 'yaml'
 
@@ -10,7 +11,10 @@ const html = await render(resume, theme)
 await fs.writeFile('dist/resume.html', html)
 await fs.writeFile('dist/resume.json', JSON.stringify(resume))
 
-// create PDF
+if (argv.find(v => v == "--no-pdf")) {
+    exit()
+}
+
 import puppeteer from 'puppeteer'
 const browser = await puppeteer.launch()
 const page = await browser.newPage()
