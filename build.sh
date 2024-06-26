@@ -6,5 +6,6 @@ podman run -ti --rm \
     -v ./dist:/home/pptruser/dist \
     -v ./builder:/home/pptruser/builder \
     -v ./theme:/home/pptruser/theme:ro \
+    -v ./pages:/home/pptruser/pages:ro \
     ghcr.io/puppeteer/puppeteer \
     node builder/builder.js
