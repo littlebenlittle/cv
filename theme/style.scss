@@ -23,6 +23,7 @@ body {
     max-width: 720px;
     margin: auto;
     padding: 2rem;
+    min-width: 370px;
 }
 
 header {
@@ -44,10 +45,21 @@ header {
         }
 
         .location {
+            display: flex;
+            flex-wrap: wrap;
             margin-bottom: 1rem;
 
             span {
                 margin-right: $spacing;
+            }
+
+            .address {
+                @media screen and (min-width: $phone-width) {
+                    display: flex;
+                    .city::after {
+                        content: ","
+                    }
+                }
             }
         }
 
@@ -100,10 +112,13 @@ header {
 }
 
 main {
+    
+    hr {
+        break-after: avoid-page;
+    }
 
     .section-title {
         display: flex;
-        break-after: avoid-page;
 
         i {
             line-height: 20px;
