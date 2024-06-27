@@ -114,6 +114,12 @@ education:
     startDate: 2011-06-01
     endDate: 2015-05-01
 
+certificates:
+  - name: CU Mini Law School Certificate
+    issuer: CU Boulder, School of Law
+    date: 2022-05-01
+    url: https://www.colorado.edu/law/academics/mini-law-school
+
 skills:
   - name: Linux System Administration
     level: Advanced (8 years)
