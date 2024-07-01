@@ -2,6 +2,7 @@ $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schem
 
 meta:
   theme: stackoverflow
+  canonical: https://benlittle.dev/resume
 
 basics:
   name: Ben Little
