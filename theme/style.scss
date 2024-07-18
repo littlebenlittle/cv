@@ -65,23 +65,18 @@ header {
         }
 
         .website {
-            grid-area: website;
-
             * {
                 margin-right: $spacing;
             }
         }
 
         .email {
-            grid-area: email;
-
             * {
                 margin-right: $spacing;
             }
         }
 
         ul.profiles {
-            grid-area: profiles;
             list-style-type: none;
             padding: 0;
             margin: 0;
@@ -97,10 +92,16 @@ header {
         }
     }
 
-    .image {
-        grid-area: image;
+    .img-ctr {
         height: 172px;
         width: 172px;
+        display: flex;
+        justify-content: end;
+        
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
     }
 
     p.summary {
